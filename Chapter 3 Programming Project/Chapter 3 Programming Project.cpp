@@ -4,15 +4,15 @@
 #include <iomanip>
 #include <cmath>
 
-//Variables
-float interestRate;
-float timesCompounded;
-float principal;
-float interestEarned;
-float totalInSavings;
-
 //Main Function for Interest Calculation
 int main() {
+	
+	//Variables
+	float interestRate;
+	float timesCompounded;
+	float principal;
+	float interestEarned;
+	float totalInSavings;
 
 	//Inquires and assigns Principal 
 	std::cout
