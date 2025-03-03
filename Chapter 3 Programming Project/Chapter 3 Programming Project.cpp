@@ -1,6 +1,5 @@
 //Chapter 3 Programming Project
 #include <iostream>
-#include <string>
 #include <iomanip>
 #include <cmath>
 
