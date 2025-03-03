@@ -4,9 +4,9 @@
 #include <iomanip>
 
 //These constants were dervied from dividing ingredient by the batch size created by the recipe.
-const double amountSugarRatio = 0.03125;
-const double amountButterRatio = 0.0208333;
-const double amountFlourRatio = 0.0572916;
+const double amountSugarRatio = 0.03125; // = 1.5 cups of sugar / 48 cookies
+const double amountButterRatio = 0.0208333; // = 1 cup of butter / 48 cookies
+const double amountFlourRatio = 0.0572916; // = 2.75 cups of flour / 48 cookies
 
 //Main function 
 int main() {
