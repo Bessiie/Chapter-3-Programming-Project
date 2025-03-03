@@ -8,12 +8,13 @@ const double amountSugarRatio = 0.03125;
 const double amountButterRatio = 0.0208333;
 const double amountFlourRatio = 0.0572916;
 
-
+//Main function 
 int main() {
-
+	
+	//Declare variable for user to input the amount of cookies they whant to make.
 	float amountCookies;
-
-	//Display question and recieve inputs
+	
+	//Display question and receive inputs
 	std::cout 
 		<< "How many cookies do you want to make?" << std::endl;
 	std::cin
@@ -27,7 +28,6 @@ int main() {
 		<< "You will need:\n"
 		<< amountCookies * amountSugarRatio << " cups of sugar.\n"
 		<< amountCookies * amountButterRatio << " cups of butter.\n"
-		<< amountCookies * amountFlourRatio << " cups of flour."
-		<< std::endl;
+		<< amountCookies * amountFlourRatio << " cups of flour.";
 	return 0;
 }
