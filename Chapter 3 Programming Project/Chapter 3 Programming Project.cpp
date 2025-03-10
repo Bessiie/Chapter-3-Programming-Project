@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#include <cmath>
 
 //Main Function for Interest Calculation
 int main() {
@@ -39,12 +40,16 @@ int main() {
 	//Sets rounding rules
 	std::cout << std::fixed << std::setprecision(2);
 
-	//Calculation Output
+	// For formatting with setw and alignment
+	const int width = 20; 
+
+	// Calculation Output
 	std::cout
-		<< "Interest Rate: " << (interestRate * 100) << "\n"
-		<< "Times Compounded: " << timesCompounded << "\n"
-		<< "Principal: " << principal << "\n"
-		<< "Interest Earned: " << interestEarned << "\n"
-		<< "Amount in Savings: " << totalInSavings;
+		<< std::left << std::setw(width) << "Interest Rate: " << std::right << std::setw(width - 1) << (interestRate * 100) << "%" << std::endl
+		<< std::left << std::setw(width) << "Times Compounded: " << std::right << std::setw(width) << timesCompounded << std::endl
+		<< std::left << std::setw(width) << "Principal: " << std::right << std::setw(width) << principal << std::endl
+		<< std::left << std::setw(width) << "Interest Earned: " << std::right << std::setw(width) << interestEarned << std::endl
+		<< std::left << std::setw(width) << "Amount in Savings: " << std::right << std::setw(width) << totalInSavings << std::endl;
+
 return 0;
 }
